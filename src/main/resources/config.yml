@@ -1,0 +1,16 @@
+# UniversalEnchant configuration
+# Set the XP level cost per enchantment application and cooldowns.
+
+cost:
+  # Whether enchanting costs XP levels at all.
+  enabled: true
+  # Number of XP levels to deduct per enchantment applied.
+  xp-levels-per-enchant: 5
+
+cooldown:
+  # Whether cooldowns between enchant applications are enabled.
+  enabled: true
+  # Seconds a player must wait between individual /enchant applications.
+  seconds-single: 1
+  # Seconds a player must wait between /enchantall uses.
+  seconds-all: 5

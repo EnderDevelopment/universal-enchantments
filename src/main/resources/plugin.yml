@@ -1,0 +1,42 @@
+name: UniversalEnchant
+version: 1.0.0
+main: com.enderdevelopment.plugin.Main
+api-version: "1.21"
+description: Apply any enchantment to any item with logic and version support.
+commands:
+  enchantall:
+    description: Enchants the held item with every compatible enchantment at the given level.
+    usage: /enchantall [level]
+    permission: universalenchant.enchantall
+  enchant:
+    description: Applies a specific enchantment to the held item at the given level.
+    usage: /enchant <enchantment> [level]
+    permission: universalenchant.enchant
+  enchantlist:
+    description: Lists all enchantments and their natural applicability.
+    usage: /enchantlist
+    permission: universalenchant.list
+  removeenchant:
+    description: Removes all enchantments from the held item.
+    usage: /removeenchant
+    permission: universalenchant.remove
+  enchantreload:
+    description: Reloads the UniversalEnchant configuration.
+    usage: /enchantreload
+    permission: universalenchant.reload
+permissions:
+  universalenchant.enchantall:
+    description: Allows using /enchantall.
+    default: op
+  universalenchant.enchant:
+    description: Allows using /enchant.
+    default: op
+  universalenchant.list:
+    description: Allows using /enchantlist.
+    default: op
+  universalenchant.remove:
+    description: Allows using /removeenchant.
+    default: op
+  universalenchant.reload:
+    description: Allows using /enchantreload.
+    default: op
